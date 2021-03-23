@@ -27,6 +27,7 @@ ros2 node info /my_turtle
 ```
 rqt
 rqt_graph
+ros2 run rqt_console rqt_console
 ```
 
 # ROS2 TOPIC
