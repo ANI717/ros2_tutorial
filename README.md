@@ -71,8 +71,23 @@ ros2 service find std_srvs/srv/Empty
 ```
 ros2 interface show std_srvs/srv/Empty.srv
 ```
-# ros2 service call <service_name> <service_type> "args"
+### ros2 service call <service_name> <service_type> "args"
 ```
 ros2 service call /clear std_srvs/srv/Empty
 ros2 service call /spawn turtlesim/srv/Spawn "{x: 2, y: 2, theta: 0.2, name: ''}"
+```
+
+# ROS2 PARAM
+### ros2 param get <node_name> <parameter_name>
+```
+ros2 param get /teleop_turtle scale_angular
+ros2 param get /turtlesim background_g
+```
+### ros2 param set <node_name> <parameter_name> "value"
+```
+ros2 param set /turtlesim background_r 150
+```
+### ros2 param dump <node_name>
+```
+ros2 param dump /turtlesim
 ```
