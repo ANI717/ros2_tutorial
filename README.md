@@ -40,7 +40,7 @@ ros2 topic echo /turtle1/cmd_vel
 ```
 ros2 topic info /turtle1/cmd_vel
 ```
-### ros2 interface show <type.msg>
+### ros2 interface show <type_name>.msg
 ```
 ros2 interface show geometry_msgs/msg/Twist
 ```
