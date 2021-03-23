@@ -26,3 +26,21 @@ ros2 node info /my_turtle
 rqt
 rqt_graph
 ```
+
+# ROS2 TOPIC
+```
+ros2 topic list
+ros2 topic list -t
+```
+### ros2 topic echo <topic_name>
+```
+ros2 topic echo /turtle1/cmd_vel
+```
+### ros2 topic info <topic_name>
+```
+ros2 topic info /turtle1/cmd_vel
+```
+### ros2 interface show <type>.msg
+```
+ros2 interface show geometry_msgs/msg/Twist
+```
