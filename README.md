@@ -1,4 +1,4 @@
-# ros2 run
+# ROS2 RUN
 ### ros2 run <package_name> <executable_name>
 ```
 ros2 run turtlesim turtlesim_node
@@ -12,7 +12,7 @@ ros2 run turtlesim turtlesim_node --ros-args --remap __node:=my_turtle
 ros2 run turtlesim turtlesim_node --ros-args --params-file ./turtlesim.yaml
 ```
 
-# ros2 node
+# ROS2 NODE
 ```
 ros2 node list
 ```
@@ -21,7 +21,7 @@ ros2 node list
 ros2 node info /my_turtle
 ```
 
-# rqt
+# RQT
 ```
 rqt
 rqt_graph
