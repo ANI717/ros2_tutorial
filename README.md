@@ -93,3 +93,21 @@ ros2 param set /turtlesim background_r 150
 ```
 ros2 param dump /turtlesim
 ```
+
+# ROS2 ACTION
+```
+ros2 action list
+ros2 action list -t
+```
+```
+ros2 action info /turtle1/rotate_absolute
+```
+```
+ros2 interface show turtlesim/action/RotateAbsolute.action
+```
+### ros2 action send_goal <action_name> <action_type> "values"
+```
+ros2 action send_goal /turtle1/rotate_absolute turtlesim/action/RotateAbsolute "{theta: 1.57}"
+ros2 action send_goal /turtle1/rotate_absolute turtlesim/action/RotateAbsolute "{theta: -1.57}" --feedback
+```
+
