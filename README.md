@@ -112,3 +112,9 @@ ros2 action send_goal /turtle1/rotate_absolute turtlesim/action/RotateAbsolute "
 ros2 action send_goal /turtle1/rotate_absolute turtlesim/action/RotateAbsolute "{theta: -1.57}" --feedback
 ```
 
+# ROS2 Launch
+### ros2 launch <launch_file_name>
+```
+ros2 launch turtlesim_mimic_launch.py
+```
+### ros2 launch <package_name> <launch_file_name>
