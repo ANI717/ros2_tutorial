@@ -118,3 +118,8 @@ ros2 action send_goal /turtle1/rotate_absolute turtlesim/action/RotateAbsolute "
 ros2 launch turtlesim_mimic_launch.py
 ```
 ### ros2 launch <package_name> <launch_file_name>
+
+# Dependency Check
+```
+rosdep install --from-paths src --ignore-src --rosdistro dashing -y --skip-keys "console_bridge fastcdr fastrtps libopensplice67 libopensplice69 rti-connext-dds-5.3.1 urdfdom_headers"
+```
